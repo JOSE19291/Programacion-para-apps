@@ -1,5 +1,5 @@
 // Con manejo de excepciones
-/* public class Calculator {
+public class Calculator {
     public static void main(String[] args) {
         if (args.length != 3) {
             System.out.println("Java Calculator operando 1 operando 2");
@@ -32,10 +32,10 @@
             }
         }
     }
-} */
+} 
 
 // Sin manejo de excepciones
-public class Calculator {
+/* public class Calculator {
     public static void main(String[] args) {
         if (args.length != 3) {
             System.out.println("Java Calculator operando 1 operando 2");
@@ -73,4 +73,4 @@ public class Calculator {
 
         System.out.println(args[0] + " + " + args[2] + " = " + res);
     }
-}
+} */
