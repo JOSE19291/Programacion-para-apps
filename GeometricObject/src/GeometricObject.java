@@ -6,7 +6,7 @@ public class GeometricObject {
     private java.util.Date dateCreated;
 
     public GeometricObject() {
-        color = "White";
+        color = "";
         filled = false;
     }
 

@@ -1,3 +1,4 @@
+
 public class Triangle extends GeometricObject {
 
     private float side1;
@@ -14,12 +15,11 @@ public class Triangle extends GeometricObject {
         this.side3 = 1;
     }
 
-    public Triangle(String color, boolean filled, float side1, float side2, float side3) {
+    public Triangle(float side1, float side2, float side3, String color, boolean filled) {
         super(color, filled);
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
-
     }
 
     public float getSide1() {
@@ -34,19 +34,28 @@ public class Triangle extends GeometricObject {
         return side3;
     }
 
+    @Override
+    public String getColor() {
+        return super.getColor();
+    }
+
+    double s = (side1 + side2 + side3) / 2;
+
     public double getArea() {
 
-        return 0;
+        double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+
+        return area;
     }
 
     public double getPerimeter() {
 
-        return 0;
+        return (side1 + side2 + side3);
     }
 
     @Override
     public String toString() {
-        return "Las medidas del triangulo son: " + side1 + ", " + side2 + ", " + side3
-                + " y el perimetro es: " + getPerimeter() + " y el area es: " + getArea();
+        return " El area del triangulo es: " + getArea() + " el perimetro es: " + getPerimeter() +
+                " el color es: " + getColor() + " y su estado de relleno es: " + isFilled();
     }
 }
