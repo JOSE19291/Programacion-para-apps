@@ -34,14 +34,9 @@ public class Triangle extends GeometricObject {
         return side3;
     }
 
-    @Override
-    public String getColor() {
-        return super.getColor();
-    }
-
-    double s = (side1 + side2 + side3) / 2;
-
     public double getArea() {
+
+        double s = (side1 + side2 + side3) / 2;
 
         double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
 
@@ -55,7 +50,7 @@ public class Triangle extends GeometricObject {
 
     @Override
     public String toString() {
-        return " El area del triangulo es: " + getArea() + " el perimetro es: " + getPerimeter() +
+        return " El perimetro es: " + getPerimeter() +
                 " el color es: " + getColor() + " y su estado de relleno es: " + isFilled();
     }
 }

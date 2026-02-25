@@ -26,5 +26,7 @@ public class App {
 
         Triangle triangulo1 = new Triangle(side1, side2, side3, color, filled);
         System.out.println("Tu informacion del triangulo es: " + triangulo1.toString());
+
+        System.out.println("El area del triangulo es: " + triangulo1.getArea());
     }
 }
