@@ -48,9 +48,4 @@ public class Triangle extends GeometricObject {
         return (side1 + side2 + side3);
     }
 
-    @Override
-    public String toString() {
-        return " El perimetro es: " + getPerimeter() +
-                " el color es: " + getColor() + " y su estado de relleno es: " + isFilled();
-    }
 }

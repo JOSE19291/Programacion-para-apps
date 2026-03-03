@@ -18,6 +18,7 @@ public class App {
         System.out.println("Ingrese el tercer lado del triangulo: ");
         side3 = scanner.nextInt();
 
+        scanner.nextLine();
         System.out.println("Ingrese el color del triangulo: ");
         color = scanner.nextLine();
 
@@ -25,7 +26,6 @@ public class App {
         filled = scanner.nextBoolean();
 
         Triangle triangulo1 = new Triangle(side1, side2, side3, color, filled);
-        System.out.println("Tu informacion del triangulo es: " + triangulo1.toString());
 
         System.out.println("El area del triangulo es: " + triangulo1.getArea());
     }
