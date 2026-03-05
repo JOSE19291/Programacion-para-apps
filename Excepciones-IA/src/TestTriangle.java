@@ -22,7 +22,7 @@ public class TestTriangle {
             triangle.setFilled(filled);
 
             System.out.println("\n--- Resultados ---");
-            System.out.println("Área: " + triangle.getArea());
+            System.out.println("Area: " + triangle.getArea());
             System.out.println("Perímetro: " + triangle.getPerimeter());
             System.out.println("Color: " + triangle.getColor());
             System.out.println("Relleno: " + triangle.isFilled());
