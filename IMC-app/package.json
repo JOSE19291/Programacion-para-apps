@@ -1,0 +1,16 @@
+{
+  "name": "imc-app",
+  "version": "1.0.0",
+  "description": "App que calcula el IMC",
+  "license": "MIT",
+  "author": "Jose Mateos de la Cruz",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^41.0.2"
+  }
+}
